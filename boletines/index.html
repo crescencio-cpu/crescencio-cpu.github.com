@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--? Link para animaciones de css-->
+    <link rel="stylesheet" href="./assets/css/animate.css-main/animate.css">
+    <!--es recomendable utilizar un normalizador de css en este caso normaliza.css-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--importando la funete de mi pagina en google fonts, para lograr verlo se debe de poner la familia y donde poner en el css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <!--un normalizador de css local es decir offline-->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <!--un normalizador de css online-->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!--!!Inportar ICONOS de forma local es decir offline importante buscar en css el archivo "all.main.css"-->
+    <link rel="stylesheet" href="./font_awesome/css/all.min.css">
+    <title>Las mejores tiendas de mi cuidad</title>
+</head>
+
+<body>
+    <!--selecotres...
+    solo se puede utilizar un id con un unico nombre en CSS #nombre de id {propiedades
+    <button id="boton-pago">boton</button>
+    se puede poner diferentes clases dentro de un metodo en CSS .nombre de class{propiedades
+    <div class="red texto-blanco">
+    </div>
+    selector de etiqueta en CSS solo se poner el tipo de etiqueta {propiedades
+    <p>Hola mundo</p>-->
+    <div class="container">
+        <div class="content animate__animated animate__bounceIn">
+            <header>
+                <!--es importante la semantica ya que es mas facil saber en que parte esta del la web en est caso el encabezado-->
+                <h1 class="title">Las mejores tiendas de mi ciudad</h1>
+                <!--se recomienda como titulo por tamaño y intensidad-->
+                <!--tablas-->
+                <table class="table">
+                    <thead>
+                        <!--define el encabezado de una tabla-->
+                        <th>#</th>
+                        <!--columna se puede poner N cantidad de veces-->
+                        <th>Nombre</th>
+                        <th>Ubicacion</th>
+                        <th>Calificacion</th>
+                        <th>Acciones</th>
+                    </thead>
+                    <tbody>
+                        <!--define el cuerpo de una tabla-->
+                        <tr>
+                            <!--con esta se define una fila sedebe de colocar las mismas N cantidad de veces de elementos de el encabezado-->
+                            <td>1</td>
+                            <!--para declarar las celdas que siempre tiene que ir en tr es decir en las filas-->
+                            <td>Chedraui</td>
+                            <td>San ramon</td>
+                            <td><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
+                            <td> <a href="./Contenido/chedraui.html">Ver mas</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Walmart</td>
+                            <td>Zona norte</td>
+                            <td><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
+                            <td><a href="./Contenido/chedraui.html">Ver mas</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Bodega aurrera</td>
+                            <td>Zona sur</td>
+                            <td><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
+                            <td><a href="./Contenido/chedraui.html">Ver mas</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </header>
+        </div>
+    </div>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>

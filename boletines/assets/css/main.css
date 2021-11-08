@@ -1,0 +1,185 @@
+/*aqui va un comentario*/
+/*
+morado: #845EC2
+celeste: #4FFBDF
+verde agua: #00C2A8
+verde pasto: #008B74
+
+degraddo espacio:
+background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+*/
+html {
+  font-family: "Zen Kurenaido", sans-serif;
+}
+img{
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #d500f9;
+}
+
+a:hover{
+  opacity: 0.8;
+}
+
+
+.title {
+  /*este manipula el formato de las palabras es decir si es mayuscula o minuscula o capitalizada*/
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  /*centar vertical y horizontal mente*/
+  background: #5c258d;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4389a2, #5c258d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4389a2, #5c258d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  /*100vh representa el total de pantalla*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 960px;
+  max-height: 500px;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 10px 10px 6px #000;
+  border-radius: 4px;
+  position: relative;
+  padding: 1.8em;
+  /*!importante para evitar el desvordamiento del un texto para eso se utiliza overflow*/
+  /*?
+  overflow-x: hidden;
+  overflow-y: scroll  ;
+  */
+  overflow: scroll;
+}
+.content{
+  padding: 1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #5c258d;
+}
+th {
+  display: none;
+}
+
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close{
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #5c258d;
+  display: inline-block;
+  display: flex;
+  font-weight: 300;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.paragraph {
+  /*espacioado de lineas*/
+  line-height: 1.8em;
+  /*manipular grosor de fuente*/
+  font-weight: 300;
+}
+
+.fa-star {
+  color: black;
+}
+
+.table {
+  width: 100%;
+  /*
+    para manipular los espacios entre bordes se recomienda poner 0
+    border-spacing: 0;
+    */
+}
+/*
+td{
+    border: solid 1px;
+}
+*/
+.table td,
+.table th {
+  padding: 1em;
+  text-align: left;
+}
+
+.table tr:nth-child(even) {
+  background-color: #d29ae6;
+}
+
+.title-item {
+  /*    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: rebeccapurple;
+    */
+  font-size: 2em;
+  border-bottom: solid 2px #5c258d;
+  padding-bottom: 1em;
+}
+
+.address{
+  font-weight: bold;
+  color: #5c258d;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+
+.main-image{
+  float: left;
+  margin-right: 1em;
+  height: 300px;
+}
+
+.position {
+  background-color: #5c258d;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+@media (min-width:900px) {
+  td{
+    width: auto;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+  th {
+    display: table-cell;
+  }
+}
+
+@media (min-height:550px) {
+   .content{
+     height: 500px;
+   }
+}
